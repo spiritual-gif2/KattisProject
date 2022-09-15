@@ -1,9 +1,10 @@
-def leave(List,name):
-    del List[List.index(name)]
+def leave(ilist, lname):
+    del ilist[ilist.index(lname)]
 
-def cut(List, fName, lName):
-    lNamePosition = List.index(lName)
-    List.insert(lNamePosition, fName)
+
+def cut(ilist, fName, lName):
+    lNamePosition = ilist.index(lName)
+    ilist.insert(lNamePosition, fName)
 
 
 try:
@@ -11,22 +12,21 @@ try:
     N = int(input())
     for i in range(N):
         nameList.append(input())
-    
 
     C = int(input())
     for i in range(C):
         inputCommand = input().split()
-        
+
         if len(inputCommand) == 2:
-            a,b = inputCommand
+            a, b = inputCommand
             if b in nameList:
                 leave(nameList, b)
 
         elif len(inputCommand) == 3:
-            a,b,c = inputCommand
+            a, b, c = inputCommand
             if c in nameList:
                 cut(nameList, b, c)
-    
+
     for name in nameList:
         print(name)
 except:

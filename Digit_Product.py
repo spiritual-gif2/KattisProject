@@ -5,10 +5,9 @@ def prod(liste):
     return pro
 
 
-def left(liste,x):
-    while x in liste:
-        liste.remove(x)
-
+def left(liste, y):
+    while y in liste:
+        liste.remove(y)
 
 
 try:
@@ -17,7 +16,7 @@ try:
     while x >= 10:
         x = str(x)
         x = [int(i) for i in x]
-        left(x,0)
+        left(x, 0)
         x = prod(x)
     print(x)
 except:

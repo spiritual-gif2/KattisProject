@@ -1,7 +1,7 @@
 listOfBattle = []
 numberOfWin = 0
 n = int(input())
-# Battles records
+# Battle records
 for i in range(n):
     listOfBattle.append(input())
 
