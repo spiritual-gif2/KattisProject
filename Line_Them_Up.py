@@ -1,12 +1,9 @@
 import copy
 
 try:
-    playersList = []
     n = int(input())
 
-    for i in range(n):
-        playersList.append(input())
-
+    playersList = [input() for _ in range(n)]
     increase = copy.copy(playersList)
     increase.sort()
     decrease = copy.copy(playersList)
@@ -20,5 +17,5 @@ try:
         print("NEITHER")
 
 
-except:
+except Exception:
     ''

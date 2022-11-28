@@ -11,16 +11,11 @@ try:
         if x > 0:
             if y > 0:
                 print(1)
-                pass
             else:
                 print(4)
-                pass
+        elif y > 0:
+            print(2)
         else:
-            if y > 0:
-                print(2)
-                pass
-            else:
-                print(3)
-                pass
+            print(3)
 except:
     ''
